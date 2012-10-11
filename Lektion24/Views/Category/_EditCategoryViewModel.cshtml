@@ -1,0 +1,10 @@
+﻿@model Lektion24.Models.ViewModels.CategoryViewModel
+
+@using (Html.BeginForm("Edit", "Category"))
+{
+    @Html.EditorFor(m => m.Category)
+    @Html.EditorFor(m => m.SelectedStrings)
+    <p>
+        <input type="submit" value="Save" />
+    </p>
+}

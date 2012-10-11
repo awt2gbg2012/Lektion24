@@ -1,0 +1,10 @@
+﻿@model Lektion24.Models.ViewModels.CategoryViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@Html.Partial("_EditCategoryViewModel", Model)
+@Html.Action("EditCategory", Model.Category.ID)

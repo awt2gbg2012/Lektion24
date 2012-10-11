@@ -1,0 +1,7 @@
+﻿@model Lektion24.Models.Entities.Category
+
+<p>
+    <span>@Html.ActionLink(Model.Name, "Edit", "Category", new { id = Model.ID }, null): </span>
+    News Count: @Model.News.Count 
+    | @Html.ActionLink("Delete", "Delete", new { id=Model.ID }) |
+</p>

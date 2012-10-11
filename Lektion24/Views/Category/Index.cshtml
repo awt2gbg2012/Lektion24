@@ -1,0 +1,14 @@
+﻿@model List<Lektion24.Models.Entities.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@if (TempData["message"] != null) { 
+    <div class="Message">@TempData["message"]</div>
+}
+
+@Html.DisplayForModel()

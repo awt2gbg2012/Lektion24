@@ -1,0 +1,6 @@
+﻿@model Lektion24.Models.ViewModels.SelectedStringsViewModel
+
+<p>
+    @Html.HiddenFor(m => Model.ID)
+    @Html.CheckBoxFor(m => Model.Selected) @Model.Text
+</p>
